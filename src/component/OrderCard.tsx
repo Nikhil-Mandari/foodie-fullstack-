@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiClock, FiPackage, FiTruck } from "react-icons/fi";
+import { FiClock, FiPackage, FiTruck } from "react-icons/fi";
 import type { Order } from "../interfaces/Order";
 
 interface Props {

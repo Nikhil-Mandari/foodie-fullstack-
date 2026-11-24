@@ -2,7 +2,7 @@ import { useContext, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import QRCode from "react-qr-code";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FiCreditCard, FiHome, FiInfo, FiMapPin, FiPackage, FiPhone, FiShield, FiTruck, FiUser } from "react-icons/fi";
+import { FiCreditCard, FiHome, FiInfo, FiPackage, FiPhone, FiShield, FiTruck, FiUser } from "react-icons/fi";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../contextapi/CartContext";

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { FiArrowLeft, FiArrowRight, FiClock, FiSearch, FiShield, FiStar, FiTruck } from "react-icons/fi";
+import { FiArrowLeft, FiArrowRight, FiClock, FiShield, FiTruck } from "react-icons/fi";
 import { useSearchParams, Link } from "react-router-dom";
 import ProductCard from "../component/ProductCard";
 import { featuredCollections, heroSlides, productHighlights, quickSearchPills, storeCategories, storeProducts } from "../component/data/StoreData";

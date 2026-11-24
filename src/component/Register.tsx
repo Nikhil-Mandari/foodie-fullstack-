@@ -46,7 +46,7 @@ const inputWrapperFocusStyle = {
 function Register() {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
-  const [focusedField, setFocusedField] = useState(null);
+  const [focusedField, setFocusedField] = useState<string | null>(null);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const {
@@ -55,7 +55,7 @@ function Register() {
     reset,
     watch,
     formState: { errors, isSubmitting },
-  } = useForm({
+  } = useForm<RegisterRequest>({
     defaultValues: { role: "ROLE_CUSTOMER" },
   });
 
@@ -77,13 +77,13 @@ function Register() {
     return { label: "Strong", color: "#22c55e", width: "100%", score };
   }, [formValues.password]);
 
-  const onSubmit = async (data) => {
-    const users = JSON.parse(
+  const onSubmit = async (data: RegisterRequest) => {
+    const users: RegisterRequest[] = JSON.parse(
       localStorage.getItem("users") || "[]"
     );
 
     const userExists = users.some(
-      (user) => user.email.toLowerCase() === data.email.toLowerCase()
+      (user: RegisterRequest) => user.email.toLowerCase() === data.email.toLowerCase()
     );
 
     if (userExists) {

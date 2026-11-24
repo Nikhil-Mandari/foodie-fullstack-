@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import {
   FaClipboardList,
-  FaHeart,
   FaUserCircle,
   FaShoppingBag,
   FaMapMarkerAlt,
-  FaSignOutAlt,
   FaUserCog,
 } from "react-icons/fa";
 

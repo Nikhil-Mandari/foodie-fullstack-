@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
-  FiUser,
   FiMail,
   FiPhone,
   FiCalendar,

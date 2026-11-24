@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiArrowLeft, FiCheckCircle, FiClock, FiMapPin, FiPackage } from "react-icons/fi";
+import { FiArrowLeft, FiCheckCircle, FiClock, FiMapPin, FiPackage, FiPhone, FiUser } from "react-icons/fi";
 import { OrderContext } from "../contextapi/OrderContext";
 
 const OrderDetails = () => {

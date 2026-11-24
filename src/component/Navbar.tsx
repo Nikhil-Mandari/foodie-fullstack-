@@ -17,7 +17,6 @@ import {
   FiSearch,
   FiShoppingBag,
   FiUser,
-  FiX,
 } from "react-icons/fi";
 import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -59,7 +58,7 @@ const Navbar = () => {
 
   const recentSearches = useMemo(() => {
     try {
-      return JSON.parse(localStorage.getItem(recentSearchKey) || "[]");
+      return JSON.parse(localStorage.getItem(recentSearchKey) || "[]") as string[];
     } catch {
       return [] as string[];
     }
